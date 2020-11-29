@@ -1,5 +1,5 @@
 # climate_website
 
-Website to promote climate justice. 
+Website to promote climate justice.
 
-Made by three friends who love this planet! 
+Made by three friends who love this planet!
