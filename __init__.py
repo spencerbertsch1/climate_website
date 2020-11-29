@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-This file contains a flask script which represents the website
-spencerbertsch.com
-"""
 
 # Imports
 from flask import (Flask, render_template, request, redirect, jsonify,
