@@ -1,17 +1,24 @@
 <html>
-    <h1>Carbon Zero</h1>
+    <!-- Use the style.css under the static directory -->
+    <link rel="stylesheet" href="../static/style.css">
+<!--    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">-->
 
-    <br>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
 
-    <a href="{{ url_for('showArticle1')}}">Investing in Solar</a>
-
-    <br>
-
-    <a href="{{ url_for('showArticle2')}}">Mike's Article!</a>
-
-    <br>
-
-    <a href="{{ url_for('showArticle3')}}">Sam's Article!</a>
-
+    <div class="homepage-content">
+        <h1>Carbon Zero</h1>
+        <br>
+        <a href="{{ url_for('showArticle1')}}">Investing in Solar</a>
+        <br>
+        <a href="{{ url_for('showArticle2')}}">Mike's Article!</a>
+        <br>
+        <a href="{{ url_for('showArticle3')}}">Sam's Article!</a>
+    </div>
 </html>
+
 

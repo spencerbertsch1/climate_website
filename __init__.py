@@ -8,7 +8,6 @@ from flask import session as login_session
 import random
 import string
 
-import httplib2
 import json
 from flask import make_response
 import requests
@@ -36,6 +35,7 @@ def showArticle2():
 @app.route('/article3')
 def showArticle3():
     return render_template('article3.html')
+
 
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
