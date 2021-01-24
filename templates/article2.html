@@ -1,10 +1,10 @@
-<html>
+{% extends 'base.html' %} {% block content %}
 
-    <h1>Mike's Article: Maybe something on geothermal? idk - up to mike!</h1>
+<h1>Mike's Article: Maybe something on geothermal? idk - up to mike!</h1>
 
-    <p>:-) </p>
+<p>:-)</p>
 
-    <br>
+<br />
 
-    <a href="{{ url_for('showHomepage')}}">Home</a>
-</html>
+<a href="{{ url_for('showHomepage')}}">Home</a>
+{% endblock %}

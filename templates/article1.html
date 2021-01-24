@@ -1,12 +1,12 @@
-<html>
-  <h1>First Article: Why Investing in Solar Makes Sense!</h1>
+{% extends 'base.html' %} {% block content %}
+<h1>First Article: Why Investing in Solar Makes Sense!</h1>
 
-  <p>
-    This can be a fun article on how climate justice can be helped by green
-    investors.
-  </p>
+<p>
+  This can be a fun article on how climate justice can be helped by green
+  investors.
+</p>
 
-  <br />
+<br />
 
-  <a href="{{ url_for('showHomepage')}}">Home</a>
-</html>
+<a href="{{ url_for('showHomepage')}}">Home</a>
+{% endblock %}
