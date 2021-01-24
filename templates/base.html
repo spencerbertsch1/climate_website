@@ -1,17 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     {% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>{% block title %}{% endblock %} - My Webpage</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Carbon Zero</title>
     {% endblock %}
-</head>
-<body>
-<div id="content">{% block content %}{% endblock %}</div>
-<div id="footer">
-    {% block footer %}
-    &copy; Copyright 2010 by <a href="http://domain.invalid/">you</a>.
-    {% endblock %}
-</div>
-</body>
+  </head>
+  <body>
+    <div id="nav">
+      {% block nav %}
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      {% endblock %}
+    </div>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %} &copy; Copyright 2021 {% endblock %}
+    </div>
+  </body>
 </html>
